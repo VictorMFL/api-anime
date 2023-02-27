@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import Header from "./Components/Header";
 
 const App = () => {
   const [data, setData] = React.useState(null);
@@ -25,8 +26,13 @@ const App = () => {
   if (data === null) return null;
   return (
     <div>
-      {data.data.map((item) => (
-        <img src={item.images.jpg.image_url} alt={item.duration} key={item.duration} />
+      <Header />
+      {data.data.map((item, index) => (
+        <section key={index} className='container'>
+        <img src={item.images.jpg.image_url} alt={item.duration}/>
+        <h1>{item.title}</h1>
+        <p>{item.synopsis}</p>
+        </section>
       ))}
         <h1></h1>
     </div>
