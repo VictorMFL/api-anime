@@ -18,10 +18,22 @@
 }
 
 .header menu h2 {
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
 }
 
-.header nav {
+.navegacao {
     display: flex;
     align-items: center;
+}
+
+.navegacao input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.navegacao input:focus {
+    border: 1px solid #d3d3d3;
 }

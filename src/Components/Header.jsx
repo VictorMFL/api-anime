@@ -9,7 +9,7 @@ const Header = () => {
         <HiMenu size={24} />
         <h2>Animes</h2>
       </menu>
-      <nav>
+      <nav className={styles.navegacao}>
         <input type='text' />
         <HiOutlineSearch size={24} />
       </nav>

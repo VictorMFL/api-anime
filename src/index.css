@@ -3,3 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #d3d3d3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 2rem;
+}
+
+.dadosAnimes {
+  margin: 0.5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 2px;
+  max-height: 45rem;
+}
+
+.imgAnime {
+  display: flex;
+} 
+
+.star {
+  position: absolute;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.star > p {
+  margin-left: 5px;
+  color: #ff9b06;
+  font-weight: 600;
+}
+
+.favorito {
+  color: #ff9b06;
+  cursor: pointer;
+}
+
+.naoFavorito {
+  color: #fff;
+  cursor: pointer;
+}
+
+.dadosAnimes img {
+  width: 100%;
+  max-height: 20rem;
+}
+
+.detalhesAnimes {
+  padding: 1rem;
+}
+
+.detalhesAnimes h1 {
+  padding: 1rem 0;
+}
+
+.detalhesAnimes > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
